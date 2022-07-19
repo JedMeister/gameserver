@@ -1,6 +1,18 @@
+turnkey-gameserver-17.0 (1) turnkey; urgency=low
+
+  * Updated all relevant Debian packages to Bullseye/11 versions
+
+  * Note: Please refer to turnkey-core's 17.0 changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Stefan Davis <stefan@turnkeylinux.org>  Tue, 19 Jul 2022 05:01:22 +0000
+
 turnkey-gameserver-16.2 (1) turnkey; urgency=low
 
   * Bugfix inithooks - closes #1652.
+
+  * Note: Please refer to turnkey-core's 16.2 changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
 
  -- Jeremy Davis <jeremy@turnkeylinux.org>  Thu, 30 Sep 2021 13:48:56 +1000
 

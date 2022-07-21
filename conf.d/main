@@ -11,7 +11,7 @@ for list in $dir/sources.list $dir/security.sources.list; do
     sed -i "\|turnkeylinux.org| s|\[|\[arch=amd64, |" $list
 done
 apt-get update
-DEBIAN_FRONTEND=noninteractive apt-get install -y lib32gcc1
+DEBIAN_FRONTEND=noninteractive apt-get install -y lib32gcc-s1
 
 # Create GAMEUSER as (limited) sudo user (initially commented out - running
 # gameserver-init will enable it; then disable it afterwards).

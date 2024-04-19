@@ -6,5 +6,5 @@ binutils
 bc
 jq
 tmux
-netcat
+netcat-openbsd
 sudo

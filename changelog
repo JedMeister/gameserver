@@ -73,6 +73,7 @@ turnkey-gameserver-18.0 (1) turnkey; urgency=low
     - Enable new non-free-firmware apt repo by default.
     - Improve turnkey-artisan so that it works reliably in cron jobs (only
       Laravel based LAMP apps).
+
  -- Jeremy Davis <jeremy@turnkeylinux.org>  Fri, 19 Apr 2024 00:26:25 +0000
 
 turnkey-gameserver-17.1 (1) turnkey; urgency=low

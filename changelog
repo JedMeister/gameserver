@@ -3,6 +3,9 @@ turnkey-gameserver-18.0 (1) turnkey; urgency=low
   * Update dependencies for new release - closes #1929.
     [Stefan Davis <stefan@turnkeylinux.org>]
 
+  * Include landing page with basic info and links - based on tkl-webcp.
+    [Jeremy Davis <jeremy@turnkeylinux.org>]
+
   * Confconsole: bugfix broken DNS-01 Let's Encrypt challenge- closes #1876 &
     #1895.
     [Jeremy Davis <jeremy@turnkeylinux.org>]
@@ -74,7 +77,7 @@ turnkey-gameserver-18.0 (1) turnkey; urgency=low
     - Improve turnkey-artisan so that it works reliably in cron jobs (only
       Laravel based LAMP apps).
 
- -- Jeremy Davis <jeremy@turnkeylinux.org>  Fri, 19 Apr 2024 00:26:25 +0000
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Wed, 24 Apr 2024 22:13:39 +0000
 
 turnkey-gameserver-17.1 (1) turnkey; urgency=low
 

@@ -32,3 +32,6 @@ echo "DenyUsers	$GAMEUSER" >> /etc/ssh/sshd_config
 git clone --depth=1 "$GAME_REPO_URL" "$GAME_REPO_DIR"
 
 mkdir -p /var/log/gameserver
+
+# remove unused/unneeded images
+rm -f /var/www/images/{adminer.png,shell.png}

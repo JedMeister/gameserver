@@ -1,5 +1,7 @@
 #include <turnkey/base>
 
+nginx
+
 mailutils
 bzip2
 binutils

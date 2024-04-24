@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+
+        <title>TurnKey GameServer</title>
+
+        <link rel="stylesheet" href="css/ui.tabs.css" type="text/css" media="print, projection, screen">
+        <link rel="stylesheet" href="css/base.css" type="text/css">
+
+        <script src="js/jquery-1.2.6.js" type="text/javascript"></script>
+        <script src="js/ui.core.js" type="text/javascript"></script>
+        <script src="js/ui.tabs.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#container-1 > ul').tabs({ fx: { opacity: 'toggle'} });
+            });
+        </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+              https = "https://"+window.location.hostname;
+              $("a[id='webmin']").attr('href', https+":12321");
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1>TurnKey GameServer</h1>
+
+        <div id="container-1">
+            <ul>
+                <li><a href="#cp"><span>Control Panel</span></a></li>
+                <li><a href="#ref"><span>Quick reference</span></a></li>
+            </ul>
+            <div id="cp">
+                <div class="fragment-content">
+                    <div>
+                        <a id="webmin" href="">
+                        <img src="images/webmin.png"/>Webmin</a>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <h2>Resources and references</h2>
+                    <ul>
+                        <li><a href="https://github.com/turnkeylinux-apps/gameserver/blob/master/docs/usage.rst">
+                            TurnKey GameServer overview docs</a></li>
+                        <li><a href="https://github.com/jesinmat/linux-gameservers?tab=readme-ov-file#linux-gameservers">
+                            GameServer LinuxGSM wrapper script docs</a></li>
+
+                        <li><a href="https://linuxgsm.com/">Linux GSM Homepage</a></li>
+                        <li><a href="https://www.turnkeylinux.org/gameserver">
+                            TurnKey GameServer appliance page inc release notes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="ref">
+                <div class="fragment-content">
+                    <p>Note to AWS Marketplace users, who have NOT <a
+                    href="https://www.turnkeylinux.org/awsmp#root">enabled
+                    root</a>:
+                    <br />some commands may require root privileges, so may need to be prefixed with
+                    <code>sudo</code>.</p>
+                    <h3>Getting started</h3>
+                    <p>Access GameServer CLI using SSH or Webmin &gt;&gt; Tools &gt;&gt; Terminal</p>
+                    <p>Then follow the notes in the <a href="">Usage docs</a>.</p>
+                    <p>For more info, please see the
+                    <a href="https://github.com/jesinmat/linux-gameservers?tab=readme-ov-file#linux-gameservers">
+                    GameServer LinuxGSM wrapper script docs</a> other docs:</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

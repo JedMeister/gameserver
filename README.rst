@@ -6,9 +6,9 @@ game servers on Linux. Choose from up to `100 different game servers`_ to
 deploy to the cloud or local VM in minutes.
 
 Host a game server in minutes. Supports installation of a huge range of game
-servers, including Counter-Strike (Source & other CS titles), Call of Duty
-(& other CoD titles), Minecraft, GTA: San Andreas, Quake III, Unreal Tournament
-(& other UT titles), plus many others.
+servers, including Counter-Strike (Source & other CS titles), a range of Call
+of Duty titles, Minecraft, GTA: San Andreas, Quake III, a numer of Unreal
+Tournament titles, plus many others.
 
 This appliance includes all the standard features in `TurnKey Core`_,
 and on top of that:

@@ -1,9 +1,14 @@
 GameServer - Host your own game server
 =======================================================
 
-GameServer is a `TurnKey GNU/Linux`_ appliance for hosting
-game servers on Linux. It provides a way of deploying game servers
-in minutes in cloud environments or local VMs.
+GameServer is a `TurnKey GNU/Linux`_ headless server appliance for hosting
+game servers on Linux. Choose from up to `100 different game servers`_ to
+deploy to the cloud or local VM in minutes.
+
+Host a game server in minutes. Supports installation of a huge range of game
+servers, including Counter-Strike (Source & other CS titles), a range of Call
+of Duty titles, Minecraft, GTA: San Andreas, Quake III, a number of Unreal
+Tournament titles, plus many others.
 
 This appliance includes all the standard features in `TurnKey Core`_,
 and on top of that:
@@ -30,6 +35,7 @@ Credentials *(passwords set at first boot)*
 -  Game server: username **gameuser**
 
 .. _TurnKey GNU/Linux: https://www.turnkeylinux.org/
+.. _100 different game servers: https://github.com/jesinmat/linux-gameservers#supported-games
 .. _TurnKey Core: https://www.turnkeylinux.org/core
 .. _Linux Gameservers: https://github.com/jesinmat/linux-gameservers
 .. _LinuxGSM: https://linuxgsm.com/

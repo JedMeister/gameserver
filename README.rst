@@ -7,7 +7,7 @@ deploy to the cloud or local VM in minutes.
 
 Host a game server in minutes. Supports installation of a huge range of game
 servers, including Counter-Strike (Source & other CS titles), a range of Call
-of Duty titles, Minecraft, GTA: San Andreas, Quake III, a numer of Unreal
+of Duty titles, Minecraft, GTA: San Andreas, Quake III, a number of Unreal
 Tournament titles, plus many others.
 
 This appliance includes all the standard features in `TurnKey Core`_,

@@ -61,7 +61,7 @@ installation`_.
 Update gameserver list
 ----------------------------
 
-There are two methods to update the gameserver list, through the Configuration Console or updating the repo from the CLI.
+If a game on the [supported games](https://github.com/jesinmat/linux-gameservers/tree/master#supported-games) list is missing, you need to update the gameserver list. There are two methods to update the gameserver list, through the Configuration Console or updating the repo from the CLI.
 
 Method 1:
 ^^^^^^^^^^^
@@ -96,6 +96,35 @@ Method 2:
     ~/gameservers# systemctl start gameserver
     
 Done!
+
+Update game server version
+----------------------------
+If there is an update to the game after deploying your server, you may need to update the server to allow clients with the newer version to connect. Currently, the GUI does not support updating the server version. Instead, follow the following procedure:
+
+
+#. Find your installed game server on the [supported games](https://github.com/jesinmat/linux-gameservers/tree/master#supported-games) list. You will need the "Code" shown in this list.
+
+#. SSH into the appliance and stop the service::
+
+    ~# systemctl stop gameserver
+
+#. Change to gameservers directory::
+
+    ~# cd /root/gameservers/
+
+#. Update your game server (replace ``<CODE>`` with the Code from step 1)::
+
+    ~# ./auto_install.sh -g <CODE> -u gameuser -p /home/gameuser/gameserver
+
+   e.g. for a Satisfactory server (code ``sf``)
+
+    ``~# ./auto_install.sh -g sf -u gameuser -p /home/gameuser/gameserver``
+
+#. Start the game server back up::
+
+    ~# ./sfserver start
+
+The server should now be updated to the latest version of the game.
 
 Logs
 ----

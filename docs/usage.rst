@@ -61,7 +61,9 @@ installation`_.
 Update gameserver list
 ----------------------------
 
-If a game on the [supported games](https://github.com/jesinmat/linux-gameservers/tree/master#supported-games) list is missing, you need to update the gameserver list. There are two methods to update the gameserver list, through the Configuration Console or updating the repo from the CLI.
+If a game on the `supported games <https://github.com/jesinmat/linux-gameservers/tree/master#supported-games>`_ list is missing, you need to update the gameserver list. There are two methods to update the gameserver list, through the Configuration Console or updating the repo from the CLI.
+
+
 
 Method 1:
 ^^^^^^^^^^^
@@ -102,7 +104,7 @@ Update game server version
 If there is an update to the game after deploying your server, you may need to update the server to allow clients with the newer version to connect. Currently, the GUI does not support updating the server version. Instead, follow the following procedure:
 
 
-#. Find your installed game server on the [supported games](https://github.com/jesinmat/linux-gameservers/tree/master#supported-games) list. You will need the "Code" shown in this list.
+#. Find your installed game server on the `supported games <https://github.com/jesinmat/linux-gameservers/tree/master#supported-games>`_ list. You will need the "Code" shown in this list.
 
 #. SSH into the appliance and stop the service::
 

@@ -22,7 +22,7 @@ def run():
             console.msgbox('Info', 'No game server is installed')
             return
 
-    console.msgbox('The game server will be attempted to be updated, even if no update is available.')
+    console.msgbox('Info', 'The game server will be attempted to be updated, even if no update is available.')
 
     curdir = os.getcwd()
     os.chdir(GAME_REPO_DIR)
@@ -40,8 +40,7 @@ def run():
     ret = subprocess.run(['./auto_install.sh', '-g', GAME_CODE, '-u', 'gameuser', '-p', '/home/gameuser/gameserver'], capture_output=True, text=True)
     if ret.returncode != 0:
         console.msgbox('Error', 'An error occurred during the update:\n' + ret.stderr)
-        os.chdir(curdir)
-        return
+        # Attempt to restart the game server even if issues occurred during the update
 
     console.infobox('Restarting the game server')
     ret = subprocess.run(['systemctl', 'start', 'gameserver'], capture_output=True, text=True)

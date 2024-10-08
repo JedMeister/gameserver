@@ -36,13 +36,12 @@ def run():
         os.chdir(curdir)
         return
 
-    console.infobox('Attemting to update game server')
+    console.infobox('Attemting to update game server. Be patient, this takes at least a few minutes...')
     ret = subprocess.run(
             ['./auto_install.sh', '-g', game_code, '-u', 'gameuser', '-p', '/home/gameuser/gameserver'], 
             capture_output=True, text=True)
     if ret.returncode != 0:
-        console.msgbox('Error', 'An error occurred during the update:\n' + ret.stderr)
-        # Attempt to restart the game server even if issues occurred during the update
+        console.msgbox('Error', 'An error occurred during the update (will attempt to restart the server regardless):\n' + ret.stderr)
 
     console.infobox('Restarting the game server')
     ret = subprocess.run(['systemctl', 'start', 'gameserver'], capture_output=True, text=True)

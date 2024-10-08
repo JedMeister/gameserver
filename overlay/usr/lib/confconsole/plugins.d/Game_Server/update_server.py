@@ -22,7 +22,7 @@ def run():
             console.msgbox('Info', 'No game server is installed')
             return
 
-    console.msgbox('Info', 'The game server will be attempted to be updated, even if no update is available.')
+    console.msgbox('Info', 'The game server will be redownloaded and installed, even if no update is available.')
 
     curdir = os.getcwd()
     os.chdir(GAME_REPO_DIR)

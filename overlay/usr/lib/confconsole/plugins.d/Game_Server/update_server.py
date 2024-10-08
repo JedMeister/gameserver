@@ -37,7 +37,9 @@ def run():
         return
 
     console.infobox('Attemting to update game server')
-    ret = subprocess.run(['./auto_install.sh', '-g', GAME_CODE, '-u', 'gameuser', '-p', '/home/gameuser/gameserver'], capture_output=True, text=True)
+    ret = subprocess.run(
+            ['./auto_install.sh', '-g', game_code, '-u', 'gameuser', '-p', '/home/gameuser/gameserver'], 
+            capture_output=True, text=True)
     if ret.returncode != 0:
         console.msgbox('Error', 'An error occurred during the update:\n' + ret.stderr)
         # Attempt to restart the game server even if issues occurred during the update

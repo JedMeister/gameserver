@@ -70,11 +70,11 @@ Method 1:
 
 #. SSH into the appliance and run the command ``confconsole``.
 
-#. Select ``Advanced`` menu or press the ``A`` key.
+#. Select ``Advanced`` menu or press the ``A`` key and then <Enter>.
 
-#. Select ``Gameserver`` or press the ``G`` key.
+#. Select ``Gameserver`` or press the ``G`` key and then <Enter>.
 
-#. Select ``Update`` or press the ``U`` key.
+#. Select ``Update list`` or press the ``U`` key and then <Enter>.
 
 #. Done!
 
@@ -101,8 +101,25 @@ Done!
 
 Update game server version
 ----------------------------
-If there is an update to the game after deploying your server, you may need to update the server to allow clients with the newer version to connect. Currently, the GUI does not support updating the server version. Instead, follow the following procedure:
+If there is an update to the game after deploying your server, you may need to update the server to allow clients with the newer version to connect. Like with updating the game server list, this can either be done through the GUI or manually. Here are instructions for the two methods:
 
+Method 1:
+^^^^^^^^^^^
+
+#. SSH into the appliance and run the command ``confconsole``.
+
+#. Select ``Advanced`` menu or press the ``A`` key and then <Enter>.
+
+#. Select ``Gameserver`` or press the ``G`` key and then <Enter>.
+
+#. Select ``Update server`` or press the ``U`` key **twice** and then <Enter>.
+
+#. Be patient, the update can take a few minutes.
+
+#. Done!
+
+Method 2:
+^^^^^^^^^^^
 
 #. Find your installed game server on the `supported games <https://github.com/jesinmat/linux-gameservers/tree/master#supported-games>`_ list. You will need the "Code" shown in this list.
 

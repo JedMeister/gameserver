@@ -1,3 +1,19 @@
+turnkey-gameserver-18.1 (1) turnkey; urgency=low
+
+  * v18.1 rebuild - includes latest Debian & TurnKey packages.
+
+  * Include new update_server confconsole plugin to support easy game updates
+    and improve docs.
+    [Elyviere <https://github.com/Elyviere>]
+
+  * Configuration console (confconsole) - v2.1.6:
+    - Let's Encrypt/Dehydrated - bugfix cron failure - closes #1962.
+    - General dehydrated-wrapper code cleanup - now passes shellcheck.
+
+  * Reduce log noise by creating ntpsec log dir - closes #1952.
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Fri, 11 Oct 2024 01:51:02 +0000
+
 turnkey-gameserver-18.0 (1) turnkey; urgency=low
 
   * Update dependencies for new release - closes #1929.

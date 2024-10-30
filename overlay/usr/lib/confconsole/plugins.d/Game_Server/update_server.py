@@ -101,7 +101,7 @@ def run():
     else:
         console.msgbox(
             "Update Success",
-            f"{game_name} was successfully updated to version {current_version}\nThe server has been restarted.",
+            f"{game_name} was successfully updated to version {new_version}\nThe server has been restarted.",
         )
 
     os.chdir(curdir)

@@ -12,7 +12,7 @@ turnkey-gameserver-18.1 (1) turnkey; urgency=low
 
   * Reduce log noise by creating ntpsec log dir - closes #1952.
 
- -- Jeremy Davis <jeremy@turnkeylinux.org>  Fri, 11 Oct 2024 01:51:02 +0000
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Mon, 11 Nov 2024 23:15:38 +0000
 
 turnkey-gameserver-18.0 (1) turnkey; urgency=low
 
